@@ -1,0 +1,87 @@
+
+
+.carousel-inner {
+  height: 280px;
+  padding-bottom: 30%; /* this sets carousel aspect ratio (4:1 here) */}
+
+.carousel-item {
+  position: absolute !important; /* Bootstrap is insistent */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;}
+
+.carousel-item img {
+  height: 100%; /* Bootstrap handles width already */
+  object-fit: cover; /* or 'contain' if you want stretch instead of crop */
+  filter: brightness(0.6);}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: "a";}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;}
+
+/*NavBar Linkhover */
+li a:hover {
+    background-color: #bd6262;
+    color: rgb(183, 51, 51);}
+
+/*
+.bg-image:hover img{
+    color: rgb(183, 51, 51);
+    filter: brightness(0.6);
+    position: relative;
+    background-image: url('...');
+    height: 30vh;
+    width: 100%; height: auto;
+    top: 50%; 
+    left: 50%;
+
+.mask:hover img{
+    top: 50%; 
+    left: 50%;
+    background-color: #bd6262;
+    position: absolute;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    text-align: center;
+    background: linear-gradient(
+        45deg,
+        hsla(168, 85%, 52%, 0.5),
+        hsla(263, 88%, 45%, 0.5) 100%
+      );
+}
+    display: none;
+    display: inline;
+}*/
+
+.bg-image img:hover{
+    filter: brightness(0.6);
+    position: relative;
+}
+
+.mask{
+    position: absolute;
+    visibility:hidden;
+}
+
+.bg-image:hover h2{
+    color: rgb(255, 255, 255);
+    filter: brightness(0.6);
+    visibility: visible;
+}
+
+
+.card-img-top img{
+    object-fit:cover;
+}
